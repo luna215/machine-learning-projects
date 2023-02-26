@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "extract-text"
+version = "0.1.0"
+description = ""
+authors = ["Paul Luna <paulluna0215@gmail.com>"]
+readme = "README.md"
+packages = [{include = "extract_text"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pdf2image = "^1.16.2"
+pytesseract = "^0.3.10"
+
+[tool.poetry.scripts]
+main = "scripts:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
